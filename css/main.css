@@ -180,7 +180,7 @@ header .hero-headline {
 }
 
 #menu li:nth-child(n+3) {
-    
+
 }
 
 .menu-not-active {
@@ -343,6 +343,7 @@ header .hero-headline {
     padding: 1.5em 1.5em;
     background: #fff;
     color: #222;
+    font-size: .8em;
 }
 
 .team-blurb h2 {
@@ -417,17 +418,18 @@ footer {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        font-size: 1em;
     }
 }
 
 @media screen and (min-width: 950px) {
-    
+
     .team-photo,
     .team-info {
         min-width: 200px;
         max-width: 200px;
     }
-  
+
     .team-photo {
         justify-content: center;
     }
