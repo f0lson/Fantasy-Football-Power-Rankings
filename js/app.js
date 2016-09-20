@@ -50,6 +50,6 @@ $(window).scroll(function(){
 
 $('#top').click(function(){
     $('html,body').animate({
-        scrollTop : $('header').position().top
+        scrollTop : $($powerRankings).position().top
     });
 });
