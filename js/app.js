@@ -32,15 +32,14 @@ $modal.click(function(e){
 
 
 var $stickyNav = $('#nav-bar');
-var $header = $('header').height();
 var fixedNav = 'fixedNav';
 var $powerRankings = $('#power-rankings');
 
 $(window).scroll(function(){
-    if( $(this).scrollTop() > $header ) {
+    if( $(this).scrollTop() > $('header').height() ) {
         $stickyNav.addClass(fixedNav);
         $powerRankings.addClass('fixedNavMargin');
-        $('#top').css('display', 'inline-block')
+        $('#top').css('display', 'inline-block');
     } else {
         $stickyNav.removeClass(fixedNav);
         $powerRankings.removeClass('fixedNavMargin');
