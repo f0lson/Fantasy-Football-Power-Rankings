@@ -179,12 +179,8 @@ header .hero-headline {
     transform: rotate(-45deg) translate(3px, -4px);
 }
 
-#menu li:nth-child(n+3) {
-
-}
-
 .menu-not-active {
-    opacity: .3;
+    opacity: .1;
     cursor: default;
     pointer-events: none;
 }
@@ -200,6 +196,11 @@ header .hero-headline {
     margin-bottom: 15px;
     font-weight: 700;
     text-align: center;
+    transition: 300ms all ease-in-out;
+}
+
+#menu li a:hover {
+    opacity: .4;
 }
 
 #power-rankings {
