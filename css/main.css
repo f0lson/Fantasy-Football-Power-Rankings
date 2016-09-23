@@ -318,13 +318,18 @@ header .hero-headline {
 }
 
 .caret-green,
-.caret-red {
+.caret-red,
+.caret-gray {
     font-size: 6em;
     display: inline;
 }
 
 .caret-green {
     color: #23A057;
+}
+
+.caret-gray {
+    color: #666;
 }
 
 .caret-red {
