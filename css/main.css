@@ -215,8 +215,10 @@ header .hero-headline {
 }
 
 #week {
+    display: inline-block;
     margin-bottom: 60px;
     font-size: 2.5em;
+    color: rgba(28, 37, 65, 1);
 }
 
 
@@ -356,13 +358,14 @@ header .hero-headline {
 .team-blurb {
     padding: 1.5em 1.5em;
     background: #fff;
-    color: #222;
+    color: #333;
     font-size: .8em;
 }
 
 .team-blurb h2 {
     margin-bottom: 10px;
     font-family: 'Roboto Condensed', Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
     font-size: 1.5em;
 }
 
@@ -478,5 +481,18 @@ footer {
     .big-head {
         width: 200px;
         height: 200px;
+    }
+
+    #week {
+        font-size: 4em;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .team-blurb h2 {
+        font-size: 2em;
+    }
+    .team-blurb p {
+        font-size: 1.4em;
     }
 }
