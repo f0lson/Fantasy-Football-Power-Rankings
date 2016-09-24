@@ -367,7 +367,7 @@ header .hero-headline {
 }
 
 .team-blurb p {
-    font-size: 1.2em;
+    font-size: 1.1em;
     font-weight: 300;
     line-height: 1.5;
     opacity: .8;
@@ -455,7 +455,7 @@ footer {
     }
 
     .team-blurb p {
-        font-size: 1.5em;
+        font-size: 1.2em;
     }
 
     .team-trending {
