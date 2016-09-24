@@ -136,6 +136,8 @@ header .hero-headline {
     z-index: 1000;
     box-shadow: 3px 3px 5px rgba(20, 20, 20, .5);
     overflow-y: hidden;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
 }
 
 #menu ul {
@@ -152,6 +154,8 @@ header .hero-headline {
     left: 0;
     background-color: rgba(20, 20, 20, .8);
     z-index: 998;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
 }
 
 .menu-container {
@@ -267,8 +271,10 @@ header .hero-headline {
 .team-photo {
     padding: 30px 10px; 15px;
     text-align: center;
-    background: linear-gradient(#0B132B, #1C2541);
-
+    background: linear-gradient(rgba(28, 37, 65, .9), rgba(28, 37, 65, .9)),
+                url('../img/bw-football-field-stripes.jpg') bottom left;
+    -webkit-background-size: cover;
+    background-size: cover;
 }
 
 .team-name {
@@ -391,7 +397,7 @@ footer {
     }
 }
 
-@media screen and (min-width: 850px) {
+@media screen and (min-width: 880px) {
     .team-container {
         flex-direction: row;
         align-items: stretch;
@@ -426,7 +432,17 @@ footer {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        font-size: 1em;
+        font-size: .8em;
+    }
+
+    .team-photo,
+    .team-info {
+        min-width: 150px;
+        max-width: 150px;
+    }
+
+    .team-photo {
+        justify-content: center;
     }
 }
 
@@ -438,8 +454,8 @@ footer {
         max-width: 200px;
     }
 
-    .team-photo {
-        justify-content: center;
+    .team-blurb p {
+        font-size: 1.5em;
     }
 
     .team-trending {
