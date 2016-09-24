@@ -114,6 +114,8 @@ header .hero-headline {
     left: 0;
     box-shadow: 0 3px 4px rgba(20, 20, 20, .6);
     z-index: 900;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
 }
 
 .fixedNavMargin {
