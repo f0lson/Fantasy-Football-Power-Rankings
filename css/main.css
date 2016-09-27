@@ -162,6 +162,11 @@ header .hero-headline {
     position: relative;
 }
 
+.close-menu:hover .bar {
+    background: #e74c3c;
+}
+
+
 .close-menu {
     display: inline-block;
     position: absolute;
@@ -175,6 +180,7 @@ header .hero-headline {
     background: #fff;
     height: 4px;
     width: 30px;
+    transition: 300ms all ease-in-out;
 }
 
 .close-menu .bar1 {
@@ -216,7 +222,7 @@ header .hero-headline {
 
 #week {
     display: inline-block;
-    margin-bottom: 60px;
+    margin-bottom: 80px;
     font-size: 2.5em;
     color: rgba(28, 37, 65, 1);
 }
@@ -388,12 +394,22 @@ footer {
     font-size: 1.5em;
 }
 
+@media screen and (min-width: 500px) {
+    .big-head {
+        width: 125px;
+        height: 125px;
+    }
+}
+
 @media screen and (min-width: 600px) {
     .heads {
         justify-content: center;
         align-items: center;
     }
 
+}
+
+@media screen and (min-width: 725px) {
     .big-head {
         width: 150px;
         height: 150px;
@@ -478,21 +494,32 @@ footer {
         font-size: 2.2em;
     }
 
-    .big-head {
-        width: 200px;
-        height: 200px;
-    }
-
     #week {
         font-size: 4em;
     }
 }
 
 @media screen and (min-width: 1000px) {
+    header h1 {
+        margin-top: 25px;
+    }
+
+    .big-head {
+        width: 170px;
+        height: 170px;
+    }
+
     .team-blurb h2 {
         font-size: 2em;
     }
     .team-blurb p {
         font-size: 1.4em;
+    }
+}
+
+@media screen and (min-width: 1150px) {
+    .big-head {
+        width: 200px;
+        height: 200px;
     }
 }
