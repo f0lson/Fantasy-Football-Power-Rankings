@@ -27,8 +27,14 @@ header {
     color: #fff;
 }
 
-header .hero-headline,
-header .hero-subheadline {
+header .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+header .hero-headline {
     position: relative;
     z-index: 5;
 }
@@ -418,6 +424,11 @@ footer {
 }
 
 @media screen and (min-width: 880px) {
+
+    header .hero-headline {
+        font-size: 3em;
+    }
+
     .team-container {
         flex-direction: row;
         align-items: stretch;
@@ -505,6 +516,10 @@ footer {
 @media screen and (min-width: 1000px) {
     header h1 {
         margin-top: 25px;
+    }
+
+    header .hero-headline {
+        font-size: 4em;
     }
 
     .big-head {
